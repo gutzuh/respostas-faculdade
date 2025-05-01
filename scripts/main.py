@@ -47,23 +47,19 @@ def determinar_periodo(data_obj):
 def configurar_credenciais():
     """Cria o arquivo credentials.json dinamicamente"""
     creds_path = os.path.join(SCRIPTS_DIR, 'credentials.json')
-    with open(creds_path, "w+") as f:
-        ff = json.load(f.read())
-        ff["web"]["redirect_uris"] = [REDIRECT_URI]
-        json.dump(ff,f)
-    # if not os.path.exists(creds_path):
-        # with open(creds_path, 'w') as f:
-            # json.dump({
-                # "web": {
-                    # "client_id": "337266590069-sudptrb0rg96nabvqs4jm5qd9bibui97.apps.googleusercontent.com",
-                    # "project_id": "project-374920",
-                    # "auth_uri": "https://accounts.google.com/o/oauth2/auth",
-                    # "token_uri": "https://oauth2.googleapis.com/token",
-                    # "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
-                    # "client_secret": "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",
-                    # "redirect_uris": [REDIRECT_URI]
-                # }
-            # }, f)
+    if not os.path.exists(creds_path):
+        with open(creds_path, 'w') as f:
+            json.dump({
+                "web": {
+                    "client_id": "AAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "project_id": "BBBBBBBBBB",
+                    "client_secret": "CCCCCCCCCCCCCCCCCCCC",
+                    "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+                    "token_uri": "https://oauth2.googleapis.com/token",
+                    "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+                    "redirect_uris": [REDIRECT_URI]
+                }
+            }, f)
 
 def autenticar():
     """Gerencia todo o fluxo de autenticação"""
