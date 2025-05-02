@@ -23,4 +23,4 @@ Pretendo criar modos para fazer simulados, questões e Cards para memorizar cois
 
 ---
 
-<h6> <i> Toda ajuda é bem vinda </i> </h6>
+<h6 align="center"> <i> Toda ajuda é bem vinda </i> </h6>
