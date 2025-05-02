@@ -12,7 +12,7 @@
 ### Coisas interessantes
 
 - [x] Script para pegar e baixar todos as atividades enviadas para o estudante
-- [ ] [I.A](sobre-essa-ia) Treinada com os conteudos
+- [ ] [I.A](#sobre-essa-ia) Treinada com os conteudos
 
 
 ---
