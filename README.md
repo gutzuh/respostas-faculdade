@@ -1,3 +1,11 @@
+
+
+# Projeto descontinuado para dar espaco para outro novo!!
+
+estou criando um projeto focado em ia, em breve atualizacoes sobre!
+
+---
+
 <div align="center">
   
 # respostas-faculdade
